@@ -1,0 +1,31 @@
+@startuml
+interface IReprodutorMusical {
+    +tocar()
+    +pausar()
+    +selecionarMusica(musica: String)
+}
+
+interface IAparelhoTelefonico {
+    +ligar(numero: String)
+    +atender()
+    +iniciarCorreioVoz()
+}
+
+interface INavegadorInternet {
+    +exibirPagina(url: String)
+    +adicionarNovaAba()
+    +atualizarPagina()
+}
+
+class iPhone implements IReprodutorMusical, IAparelhoTelefonico, INavegadorInternet {
+    +tocar()
+    +pausar()
+    +selecionarMusica(musica: String)
+    +ligar(numero: String)
+    +atender()
+    +iniciarCorreioVoz()
+    +exibirPagina(url: String)
+    +adicionarNovaAba()
+    +atualizarPagina()
+}
+@enduml
