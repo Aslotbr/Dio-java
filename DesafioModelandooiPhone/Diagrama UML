@@ -1,18 +1,17 @@
-```mermaid
-classDiagram
-class IReprodutorMusical {
+@startuml
+interface IReprodutorMusical {
     +tocar()
     +pausar()
     +selecionarMusica(musica: String)
 }
 
-class IAparelhoTelefonico {
+interface IAparelhoTelefonico {
     +ligar(numero: String)
     +atender()
     +iniciarCorreioVoz()
 }
 
-class INavegadorInternet {
+interface INavegadorInternet {
     +exibirPagina(url: String)
     +adicionarNovaAba()
     +atualizarPagina()
@@ -29,4 +28,4 @@ class iPhone implements IReprodutorMusical, IAparelhoTelefonico, INavegadorInter
     +adicionarNovaAba()
     +atualizarPagina()
 }
-```
+@enduml
